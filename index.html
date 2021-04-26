@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario:</h1>
+
+    <div>
+        <form action="" method="post" target="_self" autocomplete="on">
+            
+            <div>                                                                   <!-- Datos basicos -->
+                <label for="Nombre Y Apellido">Nombre y Apellido</label>
+                <input type="text" name="NomYApe"><br>
+                <label for="Edad">Edad</label>
+                <input type="number" name="edad"><br>
+                <label for="Email">Email</label>
+                <input type="email" name="email"><br>
+                <label for="Password">Password</label>
+                <input type="password" name="password" placeholder="Contraseña"><br>
+                <label for="fnacimiento">Fecha nacimiento</label>
+                <input type="date" name="fnacimiento">
+            </div>
+            <br><br>
+            <div>                                                                   <!-- Ocupacion --> 
+                <label for="ocupacion">Ocupacion: </label>
+                <select name="ocupacion" id="ocupacion">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="profesional">Profesional</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <h4>Horario de contacto</h4>                                        <!-- Horario Contacto -->
+                <label for="horario1">Mañana</label>
+                <input type="checkbox" name="horario1" value="manana"><br>
+                <label for="horario2">Mediodia</label>
+                <input type="checkbox" name="horario2" value="mediodia"><br>
+                <label for="horario3">Tarde</label>
+                <input type="checkbox" name="tarde" value="tarde">
+            </div>
+            <br><br>
+            <div>                                                                   <!-- Comentarios de usuario -->
+                <label for="review">Comentario:</label><br>
+                <textarea name="review" rows="2" cols="50"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+            
+            <div>                                                                   <!-- Confirmacion de spam -->  
+                <h5>Deseo recibir a mi email mas información</h5>
+                <input type="radio" id="si" name="spam" value="si" checked>
+                <label for="si">Si</label><br>
+                <input type="radio" id="no" name="spam" value="no">
+                <label for="no">No</label>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
